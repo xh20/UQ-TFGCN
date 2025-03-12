@@ -74,12 +74,16 @@ Please cite:
 ```
 Dataset
 ```bibtex
-   @inproceedings{mateusz2018bimanual,
-      title={Bimanual Actions Dataset},
-      author={Mateusz, S. and colleagues},
-      booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
-      year={2018}
-    }
+  @article{dreher2019learning,
+    title={Learning object-action relations from bimanual human demonstration using graph networks},
+    author={Dreher, Christian RG and W{\"a}chter, Mirko and Asfour, Tamim},
+    journal={IEEE Robotics and Automation Letters},
+    volume={5},
+    number={1},
+    pages={187--194},
+    year={2019},
+    publisher={IEEE}
+  }
 
   @inproceedings{ikeaasm2020,
     title={IKEA ASM Dataset},
