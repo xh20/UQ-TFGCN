@@ -19,31 +19,27 @@ This repository contains the official implementation for our paper "Understandin
 
 ### Required Datasets
 1. **Bimanual Actions Dataset**  
-   Download from: [Bimanual Actions Dataset Website](https://bimanualactionsdataset.github.io/)  
-   Please cite:
-   @inproceedings{mateusz2018bimanual,
-      title={Bimanual Actions Dataset},
-      author={Mateusz, S. and colleagues},
-      booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
-      year={2018}
-    }
-
+   Download from: [Bimanual Actions Dataset Website](https://bimanual-actions.humanoids.kit.edu/)  
 2. **IKEA ASM Dataset**  
-Download from: [IKEA ASM Dataset Website](https://ikeaasm.github.io/)  
-Please cite:
-  @inproceedings{ikeaasm2020,
-    title={IKEA ASM Dataset},
-    author={Damen, D. and colleagues},
-    booktitle={European Conference on Computer Vision},
-    year={2020}
-
-  }
-  
+   Download from: [IKEA ASM Dataset Website](https://ikeaasm.github.io/)
+3. **Data Generation**  
+   *Code will be released soon.*
 
 ## 📊 Preliminary Results
-
-### Datasets
-
+### Action Recognition and Segmentation Performance Metrics
+| Methods          | Accuracy| Macro-Recall | F1@10 | F1@25 | F1@50|
+|------------------|---------|--------------|-------|-------|------|
+| HCN (Li et al., 2018) | 39.15 | 28.18 | - | - | - |
+| ST-GCN (Yan et al., 2018) | 43.40 | 26.54 | - | - | - | 
+| multiview + HCN (Ben-Shabat et al., 2021) | 64.25 | 46.33 | - | - | - |
+| ST-GCN+TPP (Xing and Burschka, 2022b) | 68.92 | 25.63 | 66.92 | 59.66 | 41.33 |
+| AGCN + TPP (Xing and Burschka, 2022b) | 70.53 | 27.79 | 76.32 | 69.85 | 52.14 |
+| MGAF (Kim et al., 2021) | 72.40 | 49.10 | - | - | - |
+| CTR-GCN+TPP (Xing and Burschka, 2022b) | 78.70 | 37.98 | 78.84 | 72.68 | 54.40 |
+| PGCN (Xing and Burschka, 2022b) | 79.35 | 38.29 | 81.53 | 76.28 | 58.07 |
+| PIFLa (Yan et al., 2023) | **84.60** | **62.00** | - | - | - |
+| **TFGCN (ours)** | 80.39 | 39.77 | **83.99** | **80.04** | **68.00** |
+| **UQ-TFGCN (ours)** | 79.99 | 39.72 | 82.11 | 76.92 | 64.81 |
 
 ### OOD Detection Performance Metrics
 | Methods          | AUROC^1 | AUPRC^1 | AUROC^2 | AUPRC^2 |
@@ -64,3 +60,32 @@ Please cite:
 
 ## 🛠 Installation & Usage
 *Code will be released soon.*
+
+Please cite:
+```bibtex
+  @article{xing2024understanding,
+    title={Understanding human activity with uncertainty measure for novelty in graph convolutional networks},
+    author={Xing, Hao and Burschka, Darius},
+    journal={The International Journal of Robotics Research},
+    pages={02783649241287800},
+    year={2024},
+    publisher={SAGE Publications Sage UK: London, England}
+  }
+```
+Dataset
+```bibtex
+   @inproceedings{mateusz2018bimanual,
+      title={Bimanual Actions Dataset},
+      author={Mateusz, S. and colleagues},
+      booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+      year={2018}
+    }
+
+  @inproceedings{ikeaasm2020,
+    title={IKEA ASM Dataset},
+    author={Damen, D. and colleagues},
+    booktitle={European Conference on Computer Vision},
+    year={2020}
+
+  }
+```
